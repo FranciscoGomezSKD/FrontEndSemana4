@@ -10,13 +10,35 @@
 </head>
 <body>
     <h1>Pokedex LaunchX</h1>
-    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" value="celebi">
+    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" >
     <img src="./pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
     <button onclick="fetchPokemon()">Cambiar Imágen</button>
+    <!-- <button onclick="eliminarElemento()">Reset Tabla</button> -->
+    
+    <div>
+        <h1> Nombre: </h1>
+        <p id="poke_Name"></p>
+    </div>
+
     <div>
         <h1> Tipo:</h1>
-        <p id="poketype"> </p>
+        <p id="poketype">1: </p>
         <p id="poketype2"> </p>
+    </div>
+
+    <div>
+        <h1>Estadísticas:</h1>
+        <p id="attack"></p>
+        <p id="defense"></p>
+        <p id="special-attack"></p>
+        <p id="special-defense"></p>
+        <p id="speed"></p>
+        
+    </div>
+
+    <div>
+        <h1>Movimientos: <br></h1>
+        <div id="Table"></div>
     </div>
 </body>
 <footer>

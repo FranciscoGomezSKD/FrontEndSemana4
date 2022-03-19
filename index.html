@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./estilo.css">
+    
+</head>
+<body class="body">
+    <div class="PanelCentral">
+        <div class="leftPanel">
+            <div class="logoBox">
+                <div class="logoLeft"></div>
+            </div>
+            
+            <div class="contBodyLeft">
+                <div class="contMainLeft">
+                    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" value="celebi">
+                </div>
+                <div><br></div>
+                <div>
+                    <button onclick="fetchPokemon()">Buscar</button>
+                </div>
+            </div>
+        </div>
+        <div class="centralPanel">
+            <div class="central1stPanel">
+                <div class="central1stTitle">
+                    <div class="title1">
+                        <div class="textTitle1">Nombre:</div>
+                    </div>
+                    <div class="title1">
+                        <div class="textName" id="poke_Name"></div>
+                    </div>
+                </div>
+                <div class="central1stTitle">
+                    <div class="title1">
+                        <div class="textTitle1">Número:</div>
+                    </div>
+                    <div class="title1">
+                        <div class="textName" id="pokeOrder"></div>
+                    </div>
+                </div>
+                <div class="central1stTitle central2ndTitle">
+                    <div class="title1">
+                        <div class="textTitle1">Tipo:</div>
+                    </div>
+                    <div class="tipoColumns">
+                        <div class="titleTipo">
+                            <div class="textTipo" id="poketype"></div>
+                        </div>
+                        <div class="titleTipo">
+                            <div class="textTipo" id="poketype2"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="central2ndPanel">
+                <div class="cntrl2ndImage">
+                    <img alt="Pokemon" id="pokeImg" src="./pokeball.png">
+                </div>
+            </div>
+            <div class="central3rdPanel">
+                <div class="panel3Title">Estadísticas
+                </div>
+                <div class="panel3StatsCont">
+                    <div class="statCont">
+                        <div class="textStat"> Ataque:</div>
+                        <div class="valueStat" id="attack"></div>
+                    </div>
+                    <div class="statCont">
+                        <div class="textStat"> Defensa:</div>
+                        <div class="valueStat" id="defense"></div>
+                    </div>
+                    <div class="statCont">
+                        <div class="textStat"> Ataque Especial:</div>
+                        <div class="valueStat" id="special-attack"></div>
+                    </div>
+                    <div class="statCont">
+                        <div class="textStat"> Defensa Especial:</div>
+                        <div class="valueStat" id="special-defense"></div>
+                    </div>
+                    <div class="statCont">
+                        <div class="textStat"> Velocidad:</div>
+                        <div class="valueStat" id="speed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="central4thPanel">
+                <div class="panel3Title">Habilidades
+                </div>
+                <div class="panel3StatsCont" id="pokestats">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>

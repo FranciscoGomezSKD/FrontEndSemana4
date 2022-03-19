@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'Vayu Sans';
+    src: local('Vayu Sans Bold'), local('Vayu-Sans-Bold'),
+        url('VayuSans-Bold.woff2') format('woff2'),
+        url('VayuSans-Bold.woff') format('woff'),
+        url('VayuSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('Pokemon Solid.ttf') format('TrueType');
+    font-style: normal;
+    font-weight:bold;
+}
+  
+.body{
+    margin: auto auto;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #838574; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./fondo.png");
+    background-size: cover;
+}
+
+.PanelCentral{
+    /* background-color: #3737e0; */
+    height: 80%;
+    width: 65%;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+
+    box-shadow: 10px 10px 20px 8px #691e00a6
+}
+
+/* *************************  Panel izquierdo *********************************** */
+.leftPanel{
+    background-color: #6e0202;
+    height: 100%;
+    width: 16%;
+    border-radius: 1em 0em 0em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logoBox{
+    /* background-color: #7c7c7c62; */
+    margin-top: 10%;
+    height: 8%;
+    width: 90%;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoLeft{
+    height: 90%;
+    width: 90%;
+    background: url("./poke.png");
+    background-size: cover;
+}
+
+.contBodyLeft{
+    height: 20%;
+    width: 70%;
+    /* background-color: #7feecd; */
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contMainLeft{
+    /* background-color: #5caa93; */
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "Vayu Sans";
+    font-size: calc(0.2em + 0.7vw);
+    color: #5a6384;
+}
+
+#pokeName{
+    width: 95%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+.contLeftButton{
+    background-color: #19243a;
+    height: 110%;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Vayu Sans";
+    font-size: calc(0.2em + 0.7vw);
+    color: #4fe3bf;
+    border-style: none;
+}
+
+/* *************************  Panel central *********************************** */
+.centralPanel{
+    background: linear-gradient(to bottom, #b30202, #4e0101);
+    height: 100%;
+    width: 84%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;;
+    border-radius: 0em 1em 1em 0em;
+    align-items: center;
+    justify-items: center;
+}
+
+.central1stPanel{
+    /* background-color: #6348f8; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.central1stTitle{
+    /* background-color: #f94eff; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 25%;
+    /* position: absolute; */
+    margin-left: 5em;
+}
+
+.central2ndTitle{
+    height: 50%;
+}
+
+.title1{
+    /* background-color: #48f851; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.titleTipo{
+    /* background-color: #48f851; */
+    height: 33.33%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+}
+
+.textTitle1{
+    font-family: "Pokemon";
+    font-size: calc(1.5em + 0.7vw);
+    color: #ffcb05;
+    text-shadow: 10px 10px 10px #3f0101;
+}
+
+.textName{
+    font-family: "Pokemon";
+    font-size: calc(0.7em + 0.7vw);
+    color: #52994c;
+    margin-left: 2em;
+    text-shadow: 10px 10px 10px #3f0101;
+}
+
+.textTipo{
+    font-family: "Pokemon";
+    font-size: calc(0.7em + 0.7vw);
+    color: #52994c;
+    text-shadow: 10px 10px 10px #3f0101;
+}
+
+.tipoColumns{
+    /* background-color: #6d7a23; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+/**********************************************************/
+.central3rdPanel{
+    /* background-color: #513bce; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.panel3Title{
+    /* background-color: #f148e9; */
+    font-family: "Pokemon";
+    font-size: calc(1.5em + 0.7vw);
+    color: #ffcb05;
+    text-shadow: 10px 10px 10px #3f0101;
+    height: 30%;
+    width: 90%;
+    margin-left: 1em;
+    margin-bottom: 0em;
+}
+
+.panel3StatsCont{
+    /* background-color: #ac33a6; */
+    height: 70%;
+    width: 90%;
+    margin-left: 2em;
+    margin-bottom: 4em;
+}
+
+.statCont{
+    /* background-color: #1c485c; */
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textStat{
+    /* background-color: #737475; */
+    font-family: "Pokemon";
+    font-size: calc(0.5em + 0.7vw);
+    color: #ffcb05;
+    text-shadow: 10px 10px 10px #3f0101;
+    height: 100%;
+    width: 50%;
+    /* margin-left: 1em; */
+}
+
+.valueStat{
+    /* background-color: #737475; */
+    font-family: "Pokemon";
+    font-size: calc(0.3em + 0.7vw);
+    color: #52994c;
+    text-shadow: 10px 10px 10px #3f0101;
+    height: 100%;
+    width: 30%;
+}
+
+/***********************************************************/
+.central4thPanel{
+    /* background-color: #37288d; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.textAbility{
+    /* background-color: #737475; */
+    font-family: "Pokemon";
+    font-size: calc(0.5em + 0.7vw);
+    color: #52994c;
+    text-shadow: 10px 10px 10px #3f0101;
+    height: 100%;
+    width: 50%;
+    /* margin-left: 1em; */
+}
+
+.statCont2{
+    /* background-color: #1c485c; */
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/**************************************************************/
+.central2ndPanel{
+    /* background-color: #271c63; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+}
+
+.cntrl2ndImage{
+    background-color: #afafaf;
+    height: 80%;
+    width: 70%;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 15px #3a0202;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    /* z-index: 1; */
+}
+
+#pokeImg{
+    width: 70%;
+}
+
+.centralTitle{
+    /* background-color: #285c3c; */
+    height: 5%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "Vayu Sans";
+    font-size: calc(0.3em + 0.7vw);
+    color: #cad8ff;
+}
+
+.centralData{
+    /* background-color: #46a169; */
+    height: 83%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralDatCont{
+    /* background-color: #2d6844; */
+    height: 30%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.centralDataBox{
+    background-color: #0e8bff;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 15px #121832;
+    /* margin-right: 4em; */
+}
+
+.cetrlDataBoxState{
+    background-color: #20284d;
+    /* marg in-left: 2em; */
+}
+
+.DataText{
+    /* background-color: #104e96; */
+    height: 18%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: "Vayu Sans";
+    font-size: calc(0.1em + 0.7vw);
+    color: #cad8ff;
+    margin-left: 1em;
+}
+
+
+.DataTitle{
+    /* background-color: #0c3463; */
+    height: 82%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Vayu Sans";
+    font-size: calc(3em + 1vw);
+    color: #cad8ff;
+}
+
+.stateText{
+    color: #4fe3c1;
+}
+
+/* *************************  Panel derecho *********************************** */
+.rightPanel{
+    background: linear-gradient(to bottom, #1e2945, #1e2945);
+    height: 100%;
+    width: 18%;
+    border-radius: 0em 1em 1em 0em;
+}
